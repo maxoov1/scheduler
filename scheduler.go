@@ -68,7 +68,7 @@ func (s *Scheduler) validateJob(job any, arguments []any) (reflect.Value, error)
 }
 
 func (s *Scheduler) convertArgumentsToValues(arguments []any) []reflect.Value {
-	var values []reflect.Value
+	values := make([]reflect.Value, len(arguments))
 
 	for _, argument := range arguments {
 		values = append(values, reflect.ValueOf(argument))
