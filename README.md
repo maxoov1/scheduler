@@ -18,7 +18,7 @@ import (
 )
 
 func sayHello(name string) {
-    fmt.Printf("Hello, %s! \n", name)
+    fmt.Printf("Hello, %s!\n", name)
 }
 
 func main() {
